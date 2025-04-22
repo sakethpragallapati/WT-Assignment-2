@@ -36,7 +36,7 @@ function Editstudent() {
         setIsLoading(true);
         setMessage({ type: "", text: "" });
         
-        axios.get(`http://localhost:4000/api/students/${studentData.studentID}`)
+        axios.get(`https://student-management-system-backend-t0ks.onrender.com/api/students/${studentData.studentID}`)
             .then((res) => {
                 if (res.data && res.data.studentID) {
                     // Set all student data from response

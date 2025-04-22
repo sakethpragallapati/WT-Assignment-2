@@ -18,7 +18,7 @@ function Deletestudent() {
         setIsSearching(true);
         setMessage({ type: "", text: "" });
         
-        axios.get(`http://localhost:4000/api/students/${studentID}`)
+        axios.get(`https://student-management-system-backend-t0ks.onrender.com/api/students/${studentID}`)
             .then((res) => {
                 if (res.data && res.data.studentID) {
                     setStudentInfo(res.data);

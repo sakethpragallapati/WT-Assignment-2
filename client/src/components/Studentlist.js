@@ -13,7 +13,7 @@ function Studentlist() {
 
     const fetchStudents = () => {
         setIsLoading(true);
-        axios.get("http://localhost:4000/api/students")
+        axios.get("https://student-management-system-backend-t0ks.onrender.com/api/students")
             .then((res) => {
                 setStudentList(res.data);
                 setIsLoading(false);
@@ -32,7 +32,7 @@ function Studentlist() {
             fetchStudents();
         } else {
             setIsLoading(true);
-            axios.get(`http://localhost:4000/api/students/${studentId}`)
+            axios.get(`https://student-management-system-backend-t0ks.onrender.com/api/students/${studentId}`)
                 .then((res) => {
                     if (res.data && res.data.studentID) {
                         setStudentList([res.data]);

@@ -30,7 +30,7 @@ function Addstudent() {
         setIsSubmitting(true);
         setSubmitMessage({ type: "", text: "" });
         
-        axios.post('http://localhost:5000/api/students', studentData)
+        axios.post('http://localhost:4000/api/students', studentData)
             .then((res) => {
                 setSubmitMessage({ 
                     type: "success", 

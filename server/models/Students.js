@@ -47,5 +47,9 @@ const studentSchema = mongoose.Schema({
     }
 });
 
-const studentModel = mongoose.model("StudentCollection",studentSchema);
+const studentModel = mongoose.model(
+    "Student",  // Model name (singular, PascalCase)
+    studentSchema,
+    "studentcollections"  // ← Exact collection name from your DB
+  );
 export default studentModel;

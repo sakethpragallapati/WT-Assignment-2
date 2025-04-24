@@ -18,7 +18,7 @@ function Deletestudent() {
         setIsSearching(true);
         setMessage({ type: "", text: "" });
         
-        axios.get(`https://student-management-system-backend-t0ks.onrender.com/api/students${studentID}`)
+        axios.get(`https://student-management-system-backend-t0ks.onrender.com/api/students/${studentID}`)
             .then((res) => {
                 if (res.data && res.data.studentID) {
                     setStudentInfo(res.data);
@@ -47,7 +47,7 @@ function Deletestudent() {
         setIsLoading(true);
         setMessage({ type: "", text: "" });
         
-        axios.delete(`https://student-management-system-backend-t0ks.onrender.com/api/students${studentID}`)
+        axios.delete(`https://student-management-system-backend-t0ks.onrender.com/api/students/${studentID}`)
             .then((res) => {
                 setMessage({ 
                     type: "success", 

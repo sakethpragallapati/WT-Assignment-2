@@ -67,7 +67,7 @@ function Editstudent() {
         setIsSubmitting(true);
         setMessage({ type: "", text: "" });
         
-        axios.put(`http://localhost:5000/api/students/${studentData.studentID}`, studentData)
+        axios.put(`https://student-management-system-backend-t0ks.onrender.com/api/students/${studentData.studentID}`, studentData)
             .then((res) => {
                 setMessage({ 
                     type: "success", 

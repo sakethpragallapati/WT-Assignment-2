@@ -7,13 +7,7 @@ import studentroutes from './routes/api/students.js';
 dotenv.config();
 const app = express();
 
-app.use(cors({
-  origin: [
-    "http://localhost:3000", // Your local dev
-    "https://student-management-system-129.onrender.com" // Your production frontend
-  ],
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 dbConnection(); 

@@ -30,7 +30,7 @@ An easy-to-use **Student Management System** built using **MERN stack** (MongoDB
 
 ```
 /
-|-- backend
+|-- server
 |    |-- config/
 |    |    |-- db.js
 |    |-- models/
@@ -39,7 +39,7 @@ An easy-to-use **Student Management System** built using **MERN stack** (MongoDB
 |    |    |-- students.js
 |    |-- server.js
 |
-|-- frontend
+|-- client
 |    |-- src/
 |         |-- components/
 |             |-- Addstudent.jsx
